@@ -2,7 +2,6 @@
 read -p "enter the password: " password
 read -p "enter the file to be encrypted: " fname
 name=$(find /home/ajay/ -name $fname)
-echo "$name"
 if [ -f "$name" ]
 then
  if [ ${name: -4} == ".gpg" ]
